@@ -1,0 +1,20 @@
+﻿查询	        find
+重置	        reset
+新增	        add
+编辑	        edit
+删除	        delete
+批量删除	    batch-delete
+保存 	        save
+保存并关闭	    save-close
+关闭	        close
+启用	        start
+禁用	        stop
+导入	        import
+导出	        export excel 这两个是同一个图标
+申请	        apply
+提交	        submit
+送审	        songshen
+操作	        operation
+补录入	        edit-addon
+复制	        copy
+打印	        print

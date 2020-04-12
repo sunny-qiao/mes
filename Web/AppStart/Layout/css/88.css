@@ -1,0 +1,22 @@
+﻿.logotxt {line-height:80px;}
+.topleft, topright,div-top { height:80px;border:0px solid red;}
+.img-logo {width:60px;height:60px;margin-top:14px;}
+.img-title {height:71px;}
+.nav li{width:80px;height:80px; border:0px solid pink;}
+.nav li a{width:84px;height:80px;}
+.current-img{width:45px;height:45px;}
+ 
+.nav li a.selected{background:url(images/navbg.png) no-repeat;}
+.nav li a:hover{display:block;background:#000;color:#fff;background: url(images/navbg.png)  scroll 0% 0% rgb(43, 127, 181);}
+
+.topright ul{padding-top:10px;}
+
+.user{height:30px;margin-top:10px;}
+.user span{ line-height:30px; font-size:14px;}
+.user b{width:20px;height:18px; line-height:18px; font-size:14px; margin-top:7px;}
+.user i{line-height:30px; font-size:14px;}
+
+.notice{height:30px;margin-top:10px;}
+.notice span{ line-height:30px; font-size:14px;}
+.notice b{width:20px;height:18px; line-height:18px; font-size:14px; margin-top:7px;}
+.notice i{line-height:30px; font-size:14px;}

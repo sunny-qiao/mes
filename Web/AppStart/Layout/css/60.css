@@ -1,0 +1,36 @@
+﻿.logotxt {line-height:60px;}
+.topleft, topright,div-top { height:60px;}
+.img-logo {width:40px;height:40px;margin-top:10px;}
+.img-title {height:71px;}
+.nav li{width:65px;height:60px;}
+.nav li a{width:65px;height:60px;}
+.current-img{width:30px;height:30px;}
+
+.nav li a.selected{background:url(images/navbg60.png) no-repeat;}
+.nav li a:hover{display:block;background:#000;color:#fff;background: url(images/navbg60.png)  scroll 0% 0% rgb(43, 127, 181);}
+
+.topright ul{padding-top:2px;}
+ 
+.user{height:24px;margin-top:0px;line-height:24px;}
+.user span{font-size:14px;background:url(images/user.png) no-repeat 10px 5px;}
+.user b{width:20px;height:18px; line-height:18px; font-size:14px; margin-top:2px;}
+.user i{font-size:14px;}
+
+
+.notice{height:24px;margin-top:3px;line-height:24px;}
+.notice span{font-size:14px;background:url(images/user.png) no-repeat 10px 5px;}
+.notice b{width:20px;height:18px; line-height:18px; font-size:14px; margin-top:2px;margin-left:2px;}
+.notice i{font-size:14px;}
+
+
+
+.userContainer {margin-top:15px; padding-top:15px; *padding-top:5px;}
+
+  #currentAppName{ padding-right: 10px;
+                   line-height: 20px;
+                   height:20px;
+                   margin:0px;
+                   margin-top:0px;
+                  padding-left:20px;
+                  font-size:13px;
+                            }

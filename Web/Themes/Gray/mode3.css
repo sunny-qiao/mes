@@ -1,0 +1,111 @@
+﻿.btn {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.pagetitle {
+    height: 24px;
+    line-height: 24px;
+}
+
+.toolbar {
+    height: 34px;
+    line-height: 34px;
+}
+
+ .grid td {
+        line-height: 25px;
+        height: 25px;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 1px;
+    }
+
+ .span-icon {
+    line-height: 26px;
+    height: 26px;
+}
+
+.text-input, .text-area, .eci-select {
+    padding: 2px 0px;
+}
+
+.e-panel-header {
+    padding: 4px 4px 4px 4px;
+    border: 0px solid;
+    line-height: 20px;
+    height:20px;
+ 
+}
+
+.e-panel-header-icon {
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.eci-grid-headerCell-inner {
+    line-height: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.eci-grid-headerCell {
+    height: 30px;
+}
+
+.eci-grid-pager {
+    height: 30px;
+    line-height: 30px;
+ 
+}
+
+.eci-grid-row {
+    height: 25px;
+    line-height: 25px;
+}
+
+.eci-pager-right {
+    line-height: 28px;
+}
+
+.eci-pager-index {
+ 
+    height: 25px;
+
+}
+
+.eci-pager-num-container
+{
+    float:left;height:27px; line-height:27px;
+ 
+}
+
+.eci-pager-num-container span{
+    float:left;
+    height:29px;
+    line-height:29px;
+    margin:0px;
+    padding:0px;
+}
+
+.eci-pager-num {
+    height: 19px;
+    width: 30px;
+    float:left;
+    margin:4px 4px 0px 4px;
+    padding:0px; 
+}
+
+.eci-pager-go {
+    height: 22px;
+    margin:2px 4px 0px 4px;
+}
+
+.eci-grid-pager-select {margin-left:2px; margin-top:4px;height:22px;
+}

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B28687F-6783-48A7-96B6-84C0592038AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECI.MES.BLL</RootNamespace>
+    <AssemblyName>ECI.MES.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ECI.Speed.Core">
+      <HintPath>..\ShareLib\开发平台\ECI.Speed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ContextUserInfo.cs" />
+    <Compile Include="Common\NoManager.cs" />
+    <Compile Include="BaseData\MesBdBcBLL.cs" />
+    <Compile Include="BaseData\MesBdBgwjlbBLL.cs" />
+    <Compile Include="BaseData\MesBdBzBLL.cs" />
+    <Compile Include="BaseData\MesBdCcBLL.cs" />
+    <Compile Include="BaseData\MesBdCityBLL.cs" />
+    <Compile Include="BaseData\MesBdCjBLL.cs" />
+    <Compile Include="BaseData\MesBdCkBLL.cs" />
+    <Compile Include="BaseData\MesBdCpxsBLL.cs" />
+    <Compile Include="BaseData\MesBdCpxsCcBLL.cs" />
+    <Compile Include="BaseData\MesBdCpxsDocBLL.cs" />
+    <Compile Include="BaseData\MesBdCpxsMjBLL.cs" />
+    <Compile Include="BaseData\MesBdCsBLL.cs" />
+    <Compile Include="BaseData\MesBdCwBLL.cs" />
+    <Compile Include="BaseData\MesBdDbBLL.cs" />
+    <Compile Include="BaseData\MesBdDbZdbBLL.cs" />
+    <Compile Include="BaseData\MesBdDeptBLL.cs" />
+    <Compile Include="BaseData\MesBdFpcyBLL.cs" />
+    <Compile Include="BaseData\MesBdFpszBLL.cs" />
+    <Compile Include="BaseData\MesBdFpszDocBLL.cs" />
+    <Compile Include="BaseData\MesBdGdzcBLL.cs" />
+    <Compile Include="BaseData\MesBdGdzcDeptBLL.cs" />
+    <Compile Include="BaseData\MesBdGdzcFssbBLL.cs" />
+    <Compile Include="BaseData\MesBdGdzcTqyjlBLL.cs" />
+    <Compile Include="BaseData\MesBdGdzcZjfftBLL.cs" />
+    <Compile Include="BaseData\MesBdGxBLL.cs" />
+    <Compile Include="BaseData\MesBdGxGzszBLL.cs" />
+    <Compile Include="BaseData\MesBdGysBLL.cs" />
+    <Compile Include="BaseData\MesBdGysGywlBLL.cs" />
+    <Compile Include="BaseData\MesBdGzBLL.cs" />
+    <Compile Include="BaseData\MesBdJjlxBLL.cs" />
+    <Compile Include="BaseData\MesBdJygdBLL.cs" />
+    <Compile Include="BaseData\MesBdJzBLL.cs" />
+    <Compile Include="BaseData\MesBdKmBLL.cs" />
+    <Compile Include="BaseData\MesBdKqjBLL.cs" />
+    <Compile Include="BaseData\MesBdMjBLL.cs" />
+    <Compile Include="BaseData\MesBdMjCpBLL.cs" />
+    <Compile Include="BaseData\MesBdMjCsBLL.cs" />
+    <Compile Include="BaseData\MesBdMjDocBLL.cs" />
+    <Compile Include="BaseData\MesBdMjDyyxBLL.cs" />
+    <Compile Include="BaseData\MesBdMjlxBLL.cs" />
+    <Compile Include="BaseData\MesBdMjlxcsBLL.cs" />
+    <Compile Include="BaseData\MesBdMjWxbfBLL.cs" />
+    <Compile Include="BaseData\MesBdProvinceBLL.cs" />
+    <Compile Include="BaseData\MesBdSbBLL.cs" />
+    <Compile Include="BaseData\MesBdSbdbBLL.cs" />
+    <Compile Include="BaseData\MesBdSbDocBLL.cs" />
+    <Compile Include="BaseData\MesBdSbwxbyBLL.cs" />
+    <Compile Include="BaseData\MesBdScsjbcsBLL.cs" />
+    <Compile Include="BaseData\MesBdScxBcBLL.cs" />
+    <Compile Include="BaseData\MesBdScxBcGzGzBLL.cs" />
+    <Compile Include="BaseData\MesBdScxBcTqyjlBLL.cs" />
+    <Compile Include="BaseData\MesBdScxBLL.cs" />
+    <Compile Include="BaseData\MesBdScxCpplBLL.cs" />
+    <Compile Include="BaseData\MesBdScxFpBLL.cs" />
+    <Compile Include="BaseData\MesBdScxMjBLL.cs" />
+    <Compile Include="BaseData\MesBdSjkbgBLL.cs" />
+    <Compile Include="BaseData\MesBdUnitBLL.cs" />
+    <Compile Include="BaseData\MesBdWhcdBLL.cs" />
+    <Compile Include="BaseData\MesBdWjlbBLL.cs" />
+    <Compile Include="BaseData\MesBdWlBLL.cs" />
+    <Compile Include="BaseData\MesBdWlDocBLL.cs" />
+    <Compile Include="BaseData\MesBdWlFzUnitBLL.cs" />
+    <Compile Include="BaseData\MesBdWlGysBLL.cs" />
+    <Compile Include="BaseData\MesBdWlplBLL.cs" />
+    <Compile Include="BaseData\MesBdWlplCpxsBLL.cs" />
+    <Compile Include="BaseData\MesBdWlplTjBLL.cs" />
+    <Compile Include="BaseData\MesBdWlqzplBLL.cs" />
+    <Compile Include="BaseData\MesBdWlsxBLL.cs" />
+    <Compile Include="BaseData\MesBdWlzplBLL.cs" />
+    <Compile Include="BaseData\MesBdZjffBLL.cs" />
+    <Compile Include="BaseData\MesBdZqBLL.cs" />
+    <Compile Include="BaseData\MesBdZwBLL.cs" />
+    <Compile Include="BaseData\MesBdZyBLL.cs" />
+    <Compile Include="BaseData\MesBdZyDocBLL.cs" />
+    <Compile Include="BaseData\MesBdZyStatusBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECI.MES.DAL\6.ECI.MES.DAL.csproj">
+      <Project>{9da94f49-0d4c-4b2e-bf7a-bc72bcb6cf39}</Project>
+      <Name>6.ECI.MES.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECI.MES.Entity\7.ECI.MES.Entity.csproj">
+      <Project>{b26fb64b-efc8-4048-941e-90b500c54ff4}</Project>
+      <Name>7.ECI.MES.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECI.MES.VAL\5.ECI.MES.VAL.csproj">
+      <Project>{3eb27ec7-19c2-434c-876e-79daacf56763}</Project>
+      <Name>5.ECI.MES.VAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E506BAF-2E8E-426A-A636-9273D68660D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECI.MES.SO</RootNamespace>
+    <AssemblyName>ECI.MES.SO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ECI.Speed.Core">
+      <HintPath>..\ShareLib\开发平台\ECI.Speed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ECI.Speed.SO">
+      <HintPath>..\ShareLib\开发平台\ECI.Speed.SO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MesBdBc\MesBdBcDelete.cs" />
+    <Compile Include="MesBdBc\MesBdBcLoad.cs" />
+    <Compile Include="MesBdBc\MesBdBcSave.cs" />
+    <Compile Include="MesBdBc\MesBdBcSearch.cs" />
+    <Compile Include="MesBdBgwjlb\MesBdBgwjlbDelete.cs" />
+    <Compile Include="MesBdBgwjlb\MesBdBgwjlbLoad.cs" />
+    <Compile Include="MesBdBgwjlb\MesBdBgwjlbSave.cs" />
+    <Compile Include="MesBdBgwjlb\MesBdBgwjlbSearch.cs" />
+    <Compile Include="MesBdBz\MesBdBzDelete.cs" />
+    <Compile Include="MesBdBz\MesBdBzLoad.cs" />
+    <Compile Include="MesBdBz\MesBdBzSave.cs" />
+    <Compile Include="MesBdBz\MesBdBzSearch.cs" />
+    <Compile Include="MesBdCc\MesBdCcDelete.cs" />
+    <Compile Include="MesBdCc\MesBdCcLoad.cs" />
+    <Compile Include="MesBdCc\MesBdCcSave.cs" />
+    <Compile Include="MesBdCc\MesBdCcSearch.cs" />
+    <Compile Include="MesBdCity\MesBdCityDelete.cs" />
+    <Compile Include="MesBdCity\MesBdCityLoad.cs" />
+    <Compile Include="MesBdCity\MesBdCitySave.cs" />
+    <Compile Include="MesBdCity\MesBdCitySearch.cs" />
+    <Compile Include="MesBdCj\MesBdCjDelete.cs" />
+    <Compile Include="MesBdCj\MesBdCjLoad.cs" />
+    <Compile Include="MesBdCj\MesBdCjSave.cs" />
+    <Compile Include="MesBdCj\MesBdCjSearch.cs" />
+    <Compile Include="MesBdCk\MesBdCkDelete.cs" />
+    <Compile Include="MesBdCk\MesBdCkLoad.cs" />
+    <Compile Include="MesBdCk\MesBdCkSave.cs" />
+    <Compile Include="MesBdCk\MesBdCkSearch.cs" />
+    <Compile Include="MesBdCpxsCc\MesBdCpxsCcDelete.cs" />
+    <Compile Include="MesBdCpxsCc\MesBdCpxsCcLoad.cs" />
+    <Compile Include="MesBdCpxsCc\MesBdCpxsCcSave.cs" />
+    <Compile Include="MesBdCpxsCc\MesBdCpxsCcSearch.cs" />
+    <Compile Include="MesBdCpxsDoc\MesBdCpxsDocDelete.cs" />
+    <Compile Include="MesBdCpxsDoc\MesBdCpxsDocLoad.cs" />
+    <Compile Include="MesBdCpxsDoc\MesBdCpxsDocSave.cs" />
+    <Compile Include="MesBdCpxsDoc\MesBdCpxsDocSearch.cs" />
+    <Compile Include="MesBdCpxsMj\MesBdCpxsMjDelete.cs" />
+    <Compile Include="MesBdCpxsMj\MesBdCpxsMjLoad.cs" />
+    <Compile Include="MesBdCpxsMj\MesBdCpxsMjSave.cs" />
+    <Compile Include="MesBdCpxsMj\MesBdCpxsMjSearch.cs" />
+    <Compile Include="MesBdCpxs\MesBdCpxsDelete.cs" />
+    <Compile Include="MesBdCpxs\MesBdCpxsLoad.cs" />
+    <Compile Include="MesBdCpxs\MesBdCpxsSave.cs" />
+    <Compile Include="MesBdCpxs\MesBdCpxsSearch.cs" />
+    <Compile Include="MesBdCs\MesBdCsDelete.cs" />
+    <Compile Include="MesBdCs\MesBdCsLoad.cs" />
+    <Compile Include="MesBdCs\MesBdCsSave.cs" />
+    <Compile Include="MesBdCs\MesBdCsSearch.cs" />
+    <Compile Include="MesBdCw\MesBdCwDelete.cs" />
+    <Compile Include="MesBdCw\MesBdCwLoad.cs" />
+    <Compile Include="MesBdCw\MesBdCwSave.cs" />
+    <Compile Include="MesBdCw\MesBdCwSearch.cs" />
+    <Compile Include="MesBdDbZdb\MesBdDbZdbDelete.cs" />
+    <Compile Include="MesBdDbZdb\MesBdDbZdbLoad.cs" />
+    <Compile Include="MesBdDbZdb\MesBdDbZdbSave.cs" />
+    <Compile Include="MesBdDbZdb\MesBdDbZdbSearch.cs" />
+    <Compile Include="MesBdDb\MesBdDbDelete.cs" />
+    <Compile Include="MesBdDb\MesBdDbLoad.cs" />
+    <Compile Include="MesBdDb\MesBdDbSave.cs" />
+    <Compile Include="MesBdDb\MesBdDbSearch.cs" />
+    <Compile Include="MesBdDept\MesBdDeptDelete.cs" />
+    <Compile Include="MesBdDept\MesBdDeptLoad.cs" />
+    <Compile Include="MesBdDept\MesBdDeptSave.cs" />
+    <Compile Include="MesBdDept\MesBdDeptSearch.cs" />
+    <Compile Include="MesBdFpcy\MesBdFpcyDelete.cs" />
+    <Compile Include="MesBdFpcy\MesBdFpcyLoad.cs" />
+    <Compile Include="MesBdFpcy\MesBdFpcySave.cs" />
+    <Compile Include="MesBdFpcy\MesBdFpcySearch.cs" />
+    <Compile Include="MesBdFpszDoc\MesBdFpszDocDelete.cs" />
+    <Compile Include="MesBdFpszDoc\MesBdFpszDocLoad.cs" />
+    <Compile Include="MesBdFpszDoc\MesBdFpszDocSave.cs" />
+    <Compile Include="MesBdFpszDoc\MesBdFpszDocSearch.cs" />
+    <Compile Include="MesBdFpsz\MesBdFpszDelete.cs" />
+    <Compile Include="MesBdFpsz\MesBdFpszLoad.cs" />
+    <Compile Include="MesBdFpsz\MesBdFpszSave.cs" />
+    <Compile Include="MesBdFpsz\MesBdFpszSearch.cs" />
+    <Compile Include="MesBdGdzcDept\MesBdGdzcDeptDelete.cs" />
+    <Compile Include="MesBdGdzcDept\MesBdGdzcDeptLoad.cs" />
+    <Compile Include="MesBdGdzcDept\MesBdGdzcDeptSave.cs" />
+    <Compile Include="MesBdGdzcDept\MesBdGdzcDeptSearch.cs" />
+    <Compile Include="MesBdGdzcFssb\MesBdGdzcFssbDelete.cs" />
+    <Compile Include="MesBdGdzcFssb\MesBdGdzcFssbLoad.cs" />
+    <Compile Include="MesBdGdzcFssb\MesBdGdzcFssbSave.cs" />
+    <Compile Include="MesBdGdzcFssb\MesBdGdzcFssbSearch.cs" />
+    <Compile Include="MesBdGdzcTqyjl\MesBdGdzcTqyjlDelete.cs" />
+    <Compile Include="MesBdGdzcTqyjl\MesBdGdzcTqyjlLoad.cs" />
+    <Compile Include="MesBdGdzcTqyjl\MesBdGdzcTqyjlSave.cs" />
+    <Compile Include="MesBdGdzcTqyjl\MesBdGdzcTqyjlSearch.cs" />
+    <Compile Include="MesBdGdzcZjfft\MesBdGdzcZjfftDelete.cs" />
+    <Compile Include="MesBdGdzcZjfft\MesBdGdzcZjfftLoad.cs" />
+    <Compile Include="MesBdGdzcZjfft\MesBdGdzcZjfftSave.cs" />
+    <Compile Include="MesBdGdzcZjfft\MesBdGdzcZjfftSearch.cs" />
+    <Compile Include="MesBdGdzc\MesBdGdzcDelete.cs" />
+    <Compile Include="MesBdGdzc\MesBdGdzcLoad.cs" />
+    <Compile Include="MesBdGdzc\MesBdGdzcSave.cs" />
+    <Compile Include="MesBdGdzc\MesBdGdzcSearch.cs" />
+    <Compile Include="MesBdGxGzsz\MesBdGxGzszDelete.cs" />
+    <Compile Include="MesBdGxGzsz\MesBdGxGzszLoad.cs" />
+    <Compile Include="MesBdGxGzsz\MesBdGxGzszSave.cs" />
+    <Compile Include="MesBdGxGzsz\MesBdGxGzszSearch.cs" />
+    <Compile Include="MesBdGx\MesBdGxDelete.cs" />
+    <Compile Include="MesBdGx\MesBdGxLoad.cs" />
+    <Compile Include="MesBdGx\MesBdGxSave.cs" />
+    <Compile Include="MesBdGx\MesBdGxSearch.cs" />
+    <Compile Include="MesBdGysGywl\MesBdGysGywlDelete.cs" />
+    <Compile Include="MesBdGysGywl\MesBdGysGywlLoad.cs" />
+    <Compile Include="MesBdGysGywl\MesBdGysGywlSave.cs" />
+    <Compile Include="MesBdGysGywl\MesBdGysGywlSearch.cs" />
+    <Compile Include="MesBdGys\MesBdGysDelete.cs" />
+    <Compile Include="MesBdGys\MesBdGysLoad.cs" />
+    <Compile Include="MesBdGys\MesBdGysSave.cs" />
+    <Compile Include="MesBdGys\MesBdGysSearch.cs" />
+    <Compile Include="MesBdGz\MesBdGzDelete.cs" />
+    <Compile Include="MesBdGz\MesBdGzLoad.cs" />
+    <Compile Include="MesBdGz\MesBdGzSave.cs" />
+    <Compile Include="MesBdGz\MesBdGzSearch.cs" />
+    <Compile Include="MesBdJjlx\MesBdJjlxDelete.cs" />
+    <Compile Include="MesBdJjlx\MesBdJjlxLoad.cs" />
+    <Compile Include="MesBdJjlx\MesBdJjlxSave.cs" />
+    <Compile Include="MesBdJjlx\MesBdJjlxSearch.cs" />
+    <Compile Include="MesBdJygd\MesBdJygdDelete.cs" />
+    <Compile Include="MesBdJygd\MesBdJygdLoad.cs" />
+    <Compile Include="MesBdJygd\MesBdJygdSave.cs" />
+    <Compile Include="MesBdJygd\MesBdJygdSearch.cs" />
+    <Compile Include="MesBdJz\MesBdJzDelete.cs" />
+    <Compile Include="MesBdJz\MesBdJzLoad.cs" />
+    <Compile Include="MesBdJz\MesBdJzSave.cs" />
+    <Compile Include="MesBdJz\MesBdJzSearch.cs" />
+    <Compile Include="MesBdKm\MesBdKmDelete.cs" />
+    <Compile Include="MesBdKm\MesBdKmLoad.cs" />
+    <Compile Include="MesBdKm\MesBdKmSave.cs" />
+    <Compile Include="MesBdKm\MesBdKmSearch.cs" />
+    <Compile Include="MesBdKqj\MesBdKqjDelete.cs" />
+    <Compile Include="MesBdKqj\MesBdKqjLoad.cs" />
+    <Compile Include="MesBdKqj\MesBdKqjSave.cs" />
+    <Compile Include="MesBdKqj\MesBdKqjSearch.cs" />
+    <Compile Include="MesBdMjCp\MesBdMjCpDelete.cs" />
+    <Compile Include="MesBdMjCp\MesBdMjCpLoad.cs" />
+    <Compile Include="MesBdMjCp\MesBdMjCpSave.cs" />
+    <Compile Include="MesBdMjCp\MesBdMjCpSearch.cs" />
+    <Compile Include="MesBdMjCs\MesBdMjCsDelete.cs" />
+    <Compile Include="MesBdMjCs\MesBdMjCsLoad.cs" />
+    <Compile Include="MesBdMjCs\MesBdMjCsSave.cs" />
+    <Compile Include="MesBdMjCs\MesBdMjCsSearch.cs" />
+    <Compile Include="MesBdMjDoc\MesBdMjDocDelete.cs" />
+    <Compile Include="MesBdMjDoc\MesBdMjDocLoad.cs" />
+    <Compile Include="MesBdMjDoc\MesBdMjDocSave.cs" />
+    <Compile Include="MesBdMjDoc\MesBdMjDocSearch.cs" />
+    <Compile Include="MesBdMjDyyx\MesBdMjDyyxDelete.cs" />
+    <Compile Include="MesBdMjDyyx\MesBdMjDyyxLoad.cs" />
+    <Compile Include="MesBdMjDyyx\MesBdMjDyyxSave.cs" />
+    <Compile Include="MesBdMjDyyx\MesBdMjDyyxSearch.cs" />
+    <Compile Include="MesBdMjlxcs\MesBdMjlxcsDelete.cs" />
+    <Compile Include="MesBdMjlxcs\MesBdMjlxcsLoad.cs" />
+    <Compile Include="MesBdMjlxcs\MesBdMjlxcsSave.cs" />
+    <Compile Include="MesBdMjlxcs\MesBdMjlxcsSearch.cs" />
+    <Compile Include="MesBdMjlx\MesBdMjlxDelete.cs" />
+    <Compile Include="MesBdMjlx\MesBdMjlxLoad.cs" />
+    <Compile Include="MesBdMjlx\MesBdMjlxSave.cs" />
+    <Compile Include="MesBdMjlx\MesBdMjlxSearch.cs" />
+    <Compile Include="MesBdMjWxbf\MesBdMjWxbfDelete.cs" />
+    <Compile Include="MesBdMjWxbf\MesBdMjWxbfLoad.cs" />
+    <Compile Include="MesBdMjWxbf\MesBdMjWxbfSave.cs" />
+    <Compile Include="MesBdMjWxbf\MesBdMjWxbfSearch.cs" />
+    <Compile Include="MesBdMj\MesBdMjDelete.cs" />
+    <Compile Include="MesBdMj\MesBdMjLoad.cs" />
+    <Compile Include="MesBdMj\MesBdMjSave.cs" />
+    <Compile Include="MesBdMj\MesBdMjSearch.cs" />
+    <Compile Include="MesBdProvince\MesBdProvinceDelete.cs" />
+    <Compile Include="MesBdProvince\MesBdProvinceLoad.cs" />
+    <Compile Include="MesBdProvince\MesBdProvinceSave.cs" />
+    <Compile Include="MesBdProvince\MesBdProvinceSearch.cs" />
+    <Compile Include="MesBdSbdb\MesBdSbdbDelete.cs" />
+    <Compile Include="MesBdSbdb\MesBdSbdbLoad.cs" />
+    <Compile Include="MesBdSbdb\MesBdSbdbSave.cs" />
+    <Compile Include="MesBdSbdb\MesBdSbdbSearch.cs" />
+    <Compile Include="MesBdSbDoc\MesBdSbDocDelete.cs" />
+    <Compile Include="MesBdSbDoc\MesBdSbDocLoad.cs" />
+    <Compile Include="MesBdSbDoc\MesBdSbDocSave.cs" />
+    <Compile Include="MesBdSbDoc\MesBdSbDocSearch.cs" />
+    <Compile Include="MesBdSbwxby\MesBdSbwxbyDelete.cs" />
+    <Compile Include="MesBdSbwxby\MesBdSbwxbyLoad.cs" />
+    <Compile Include="MesBdSbwxby\MesBdSbwxbySave.cs" />
+    <Compile Include="MesBdSbwxby\MesBdSbwxbySearch.cs" />
+    <Compile Include="MesBdSb\MesBdSbDelete.cs" />
+    <Compile Include="MesBdSb\MesBdSbLoad.cs" />
+    <Compile Include="MesBdSb\MesBdSbSave.cs" />
+    <Compile Include="MesBdSb\MesBdSbSearch.cs" />
+    <Compile Include="MesBdScsjbcs\MesBdScsjbcsDelete.cs" />
+    <Compile Include="MesBdScsjbcs\MesBdScsjbcsLoad.cs" />
+    <Compile Include="MesBdScsjbcs\MesBdScsjbcsSave.cs" />
+    <Compile Include="MesBdScsjbcs\MesBdScsjbcsSearch.cs" />
+    <Compile Include="MesBdScxBcGzGz\MesBdScxBcGzGzDelete.cs" />
+    <Compile Include="MesBdScxBcGzGz\MesBdScxBcGzGzLoad.cs" />
+    <Compile Include="MesBdScxBcGzGz\MesBdScxBcGzGzSave.cs" />
+    <Compile Include="MesBdScxBcGzGz\MesBdScxBcGzGzSearch.cs" />
+    <Compile Include="MesBdScxBcTqyjl\MesBdScxBcTqyjlDelete.cs" />
+    <Compile Include="MesBdScxBcTqyjl\MesBdScxBcTqyjlLoad.cs" />
+    <Compile Include="MesBdScxBcTqyjl\MesBdScxBcTqyjlSave.cs" />
+    <Compile Include="MesBdScxBcTqyjl\MesBdScxBcTqyjlSearch.cs" />
+    <Compile Include="MesBdScxBc\MesBdScxBcDelete.cs" />
+    <Compile Include="MesBdScxBc\MesBdScxBcLoad.cs" />
+    <Compile Include="MesBdScxBc\MesBdScxBcSave.cs" />
+    <Compile Include="MesBdScxBc\MesBdScxBcSearch.cs" />
+    <Compile Include="MesBdScxCppl\MesBdScxCpplDelete.cs" />
+    <Compile Include="MesBdScxCppl\MesBdScxCpplLoad.cs" />
+    <Compile Include="MesBdScxCppl\MesBdScxCpplSave.cs" />
+    <Compile Include="MesBdScxCppl\MesBdScxCpplSearch.cs" />
+    <Compile Include="MesBdScxFp\MesBdScxFpDelete.cs" />
+    <Compile Include="MesBdScxFp\MesBdScxFpLoad.cs" />
+    <Compile Include="MesBdScxFp\MesBdScxFpSave.cs" />
+    <Compile Include="MesBdScxFp\MesBdScxFpSearch.cs" />
+    <Compile Include="MesBdScxMj\MesBdScxMjDelete.cs" />
+    <Compile Include="MesBdScxMj\MesBdScxMjLoad.cs" />
+    <Compile Include="MesBdScxMj\MesBdScxMjSave.cs" />
+    <Compile Include="MesBdScxMj\MesBdScxMjSearch.cs" />
+    <Compile Include="MesBdScx\MesBdScxDelete.cs" />
+    <Compile Include="MesBdScx\MesBdScxLoad.cs" />
+    <Compile Include="MesBdScx\MesBdScxSave.cs" />
+    <Compile Include="MesBdScx\MesBdScxSearch.cs" />
+    <Compile Include="MesBdSjkbg\MesBdSjkbgDelete.cs" />
+    <Compile Include="MesBdSjkbg\MesBdSjkbgLoad.cs" />
+    <Compile Include="MesBdSjkbg\MesBdSjkbgSave.cs" />
+    <Compile Include="MesBdSjkbg\MesBdSjkbgSearch.cs" />
+    <Compile Include="MesBdUnit\MesBdUnitDelete.cs" />
+    <Compile Include="MesBdUnit\MesBdUnitLoad.cs" />
+    <Compile Include="MesBdUnit\MesBdUnitSave.cs" />
+    <Compile Include="MesBdUnit\MesBdUnitSearch.cs" />
+    <Compile Include="MesBdWhcd\MesBdWhcdDelete.cs" />
+    <Compile Include="MesBdWhcd\MesBdWhcdLoad.cs" />
+    <Compile Include="MesBdWhcd\MesBdWhcdSave.cs" />
+    <Compile Include="MesBdWhcd\MesBdWhcdSearch.cs" />
+    <Compile Include="MesBdWjlb\MesBdWjlbDelete.cs" />
+    <Compile Include="MesBdWjlb\MesBdWjlbLoad.cs" />
+    <Compile Include="MesBdWjlb\MesBdWjlbSave.cs" />
+    <Compile Include="MesBdWjlb\MesBdWjlbSearch.cs" />
+    <Compile Include="MesBdWlDoc\MesBdWlDocDelete.cs" />
+    <Compile Include="MesBdWlDoc\MesBdWlDocLoad.cs" />
+    <Compile Include="MesBdWlDoc\MesBdWlDocSave.cs" />
+    <Compile Include="MesBdWlDoc\MesBdWlDocSearch.cs" />
+    <Compile Include="MesBdWlFzUnit\MesBdWlFzUnitDelete.cs" />
+    <Compile Include="MesBdWlFzUnit\MesBdWlFzUnitLoad.cs" />
+    <Compile Include="MesBdWlFzUnit\MesBdWlFzUnitSave.cs" />
+    <Compile Include="MesBdWlFzUnit\MesBdWlFzUnitSearch.cs" />
+    <Compile Include="MesBdWlGys\MesBdWlGysDelete.cs" />
+    <Compile Include="MesBdWlGys\MesBdWlGysLoad.cs" />
+    <Compile Include="MesBdWlGys\MesBdWlGysSave.cs" />
+    <Compile Include="MesBdWlGys\MesBdWlGysSearch.cs" />
+    <Compile Include="MesBdWlplCpxs\MesBdWlplCpxsDelete.cs" />
+    <Compile Include="MesBdWlplCpxs\MesBdWlplCpxsLoad.cs" />
+    <Compile Include="MesBdWlplCpxs\MesBdWlplCpxsSave.cs" />
+    <Compile Include="MesBdWlplCpxs\MesBdWlplCpxsSearch.cs" />
+    <Compile Include="MesBdWlplTj\MesBdWlplTjDelete.cs" />
+    <Compile Include="MesBdWlplTj\MesBdWlplTjLoad.cs" />
+    <Compile Include="MesBdWlplTj\MesBdWlplTjSave.cs" />
+    <Compile Include="MesBdWlplTj\MesBdWlplTjSearch.cs" />
+    <Compile Include="MesBdWlpl\MesBdWlplDelete.cs" />
+    <Compile Include="MesBdWlpl\MesBdWlplLoad.cs" />
+    <Compile Include="MesBdWlpl\MesBdWlplSave.cs" />
+    <Compile Include="MesBdWlpl\MesBdWlplSearch.cs" />
+    <Compile Include="MesBdWlqzpl\MesBdWlqzplDelete.cs" />
+    <Compile Include="MesBdWlqzpl\MesBdWlqzplLoad.cs" />
+    <Compile Include="MesBdWlqzpl\MesBdWlqzplSave.cs" />
+    <Compile Include="MesBdWlqzpl\MesBdWlqzplSearch.cs" />
+    <Compile Include="MesBdWlsx\MesBdWlsxDelete.cs" />
+    <Compile Include="MesBdWlsx\MesBdWlsxLoad.cs" />
+    <Compile Include="MesBdWlsx\MesBdWlsxSave.cs" />
+    <Compile Include="MesBdWlsx\MesBdWlsxSearch.cs" />
+    <Compile Include="MesBdWlzpl\MesBdWlzplDelete.cs" />
+    <Compile Include="MesBdWlzpl\MesBdWlzplLoad.cs" />
+    <Compile Include="MesBdWlzpl\MesBdWlzplSave.cs" />
+    <Compile Include="MesBdWlzpl\MesBdWlzplSearch.cs" />
+    <Compile Include="MesBdWl\MesBdWlDelete.cs" />
+    <Compile Include="MesBdWl\MesBdWlLoad.cs" />
+    <Compile Include="MesBdWl\MesBdWlSave.cs" />
+    <Compile Include="MesBdWl\MesBdWlSearch.cs" />
+    <Compile Include="MesBdZjff\MesBdZjffDelete.cs" />
+    <Compile Include="MesBdZjff\MesBdZjffLoad.cs" />
+    <Compile Include="MesBdZjff\MesBdZjffSave.cs" />
+    <Compile Include="MesBdZjff\MesBdZjffSearch.cs" />
+    <Compile Include="MesBdZq\MesBdZqDelete.cs" />
+    <Compile Include="MesBdZq\MesBdZqLoad.cs" />
+    <Compile Include="MesBdZq\MesBdZqSave.cs" />
+    <Compile Include="MesBdZq\MesBdZqSearch.cs" />
+    <Compile Include="MesBdZw\MesBdZwDelete.cs" />
+    <Compile Include="MesBdZw\MesBdZwLoad.cs" />
+    <Compile Include="MesBdZw\MesBdZwSave.cs" />
+    <Compile Include="MesBdZw\MesBdZwSearch.cs" />
+    <Compile Include="MesBdZyDoc\MesBdZyDocDelete.cs" />
+    <Compile Include="MesBdZyDoc\MesBdZyDocLoad.cs" />
+    <Compile Include="MesBdZyDoc\MesBdZyDocSave.cs" />
+    <Compile Include="MesBdZyDoc\MesBdZyDocSearch.cs" />
+    <Compile Include="MesBdZyStatus\MesBdZyStatusDelete.cs" />
+    <Compile Include="MesBdZyStatus\MesBdZyStatusLoad.cs" />
+    <Compile Include="MesBdZyStatus\MesBdZyStatusSave.cs" />
+    <Compile Include="MesBdZyStatus\MesBdZyStatusSearch.cs" />
+    <Compile Include="MesBdZy\MesBdZyDelete.cs" />
+    <Compile Include="MesBdZy\MesBdZyLoad.cs" />
+    <Compile Include="MesBdZy\MesBdZySave.cs" />
+    <Compile Include="MesBdZy\MesBdZySearch.cs" />
+    <Compile Include="MesBdZy\MesBdZyGetLower.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECI.MES.BLL\4.ECI.MES.BLL.csproj">
+      <Project>{1b28687f-6783-48a7-96b6-84c0592038ab}</Project>
+      <Name>4.ECI.MES.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECI.MES.Entity\7.ECI.MES.Entity.csproj">
+      <Project>{b26fb64b-efc8-4048-941e-90b500c54ff4}</Project>
+      <Name>7.ECI.MES.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECI.MES.ServiceList\2.ECI.MES.ServiceList.csproj">
+      <Project>{3bf4d0a2-820a-4093-a095-8b607af451b7}</Project>
+      <Name>2.ECI.MES.ServiceList</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,59 @@
+@charset "gb2312";
+/* CSS Document */
+
+body{ width:100%; height:100% ;margin:0px; padding:0px; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå";font-size:12px; background-color:#d6dedf; }
+
+.header{ width:100%; height:40px;line-height:40px; margin-left:auto; margin-right:auto; margin-top:0px; z-index:100; position:fixed; box-sizing:border-box; padding:0px 20px;} 
+.top_left{ height:40px;float:left;}
+.top_right{ height:40px;float:right; text-align:right;}
+
+.bg{ width:100%; height:235px;;background-image:url(images/bg_1.jpg); background-repeat: repeat-x;top:50%; margin-top:-117px; position:fixed; z-index:1;}
+
+.main_z{ background-image:url(images/bg_2.jpg); width:1002px; height:596px; position:fixed;z-index:2; left:50%; top:50%;margin-left:-501px; ; margin-top:-283px;background-repeat:no-repeat; }
+
+.logo{ margin-top:30px; padding-left:20px;}
+.logo_b{font-size:32px; font-weight:bold; color:#0a548e; }
+
+.login{position:fixed;z-index:3; left:50%; top:50%;margin-left:-185px;  margin-top:-120px;background-repeat:no-repeat;}
+.login_z{width:460px; height:80px;}
+.login_rm{ float:left;font-size:18px; color:#616c71; margin-left:30px; margin-top:5px;}
+.login_kk{ background-image:url(images/btm_08.png);float:left; margin-left:18px; width:250px; height:35px; }
+.login_icon{ clear:both;; margin-left:8px;margin-top:9px; width:20px; float:left;}
+.login_i{ border:none; width:200px; height:30px;float:left;}
+.login_input{border:none; width:200px; height:26px; line-height:20px; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå";font-size: 18px;color: #999; padding-left:5px; background-color:#f5f6f7; float:left; margin-top:3px; outline:medium;}
+
+.login_kk_a{ background-image:url(images/btm_08.png);float:left; margin-left:34px; width:250px; height:35px; }
+
+
+
+
+.login_k_2s{ width:460px; height:30px;line-height:30px;}
+.login_k_2a{ float:left; line-height:30px; margin-left:98px;}
+.login_k_2b{ float:right; line-height:30px; margin-right:230px;}
+.fpw{ color:#25AAE1}
+
+.login_k_2b a {}
+.login_k_2b a:hover {color:red;}
+
+
+.login_btn{width: 250px;height: 35px;background-repeat: repeat-x;top:50%; margin-top:10px; margin-left:102px; z-index:3;}
+.btn {
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 20px;
+	width: 250px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 3px;
+	border: 0px;
+	box-shadow: 1px 1px 3px #888888;
+	padding: 0px;
+	color: #FFF;
+	background-color: #39a1cd;
+	margin: 0px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+
+.login_k_2s a {  color:#616c71;text-decoration:none;  }
+.login_k_2s a:hover {  color:red; }

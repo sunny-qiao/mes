@@ -1,0 +1,48 @@
+﻿.skin1 .panel-body
+{
+    background:#3F3F4E !important;
+    border:0px;
+}
+
+.skin1  .accordion .accordion-header
+{
+     background:#3F3F4E !important;
+    
+}
+
+.skin1 .panel-title {
+    font-size: 15px;
+    color: white;
+    height: 20px !important;
+    line-height: 20px !important;
+    float: left;
+    font-family: "Microsoft YaHei","SimSun","open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.skin1 .m_g_item
+{
+    color:white;
+    font-size:14px;
+
+}
+
+.skin1 .accordion .accordion-header
+{
+    border:0px;
+}
+
+.skin1 .background
+{
+     background:#3F3F4E !important;
+}
+
+.skin1 .tree
+{
+    height:25px;
+    line-height:25px;
+}
+
+.skin1 .accordion-collapse
+{
+    display:none;
+}

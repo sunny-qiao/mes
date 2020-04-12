@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" Class="ECI.SSO.UI.Handler.SSODataHandler" %>

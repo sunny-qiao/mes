@@ -1,0 +1,5 @@
+﻿<ImportConfig  TypeName="基础料号(2)" TableName="DEMO_001" CheckMode="All" Action="ReadData,SaveDB" ProcedureName="PR_DEMO_001_IMPORT_2" TemplateFile="Excel/基础料号.xls" >
+
+  <Column Name="料号" DataField="PART_NO" Width="200"></Column>
+  <Column Name="商品名称" DataField="NAME" Width="200"></Column>
+</ImportConfig>

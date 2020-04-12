@@ -1,0 +1,126 @@
+﻿.btn {
+    height: 20px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pagetitle {
+    height: 25px;
+    line-height: 25px;
+    background: #E0ECFF;
+}
+
+.toolbar {
+    height: 25px;
+    line-height: 25px;
+}
+
+.grid td {
+    line-height: 22px;
+    height: 22px;
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.span-icon {
+    height: 20px;
+    line-height: 20px;
+}
+
+.text-input, .text-area, .eci-select {
+    padding: 0px 0px;
+}
+
+.e-panel-header {
+    padding: 2px 3px 1px 5px;
+    border: 0px solid;
+    line-height: 20px;
+}
+
+.e-panel-header-icon {
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.eci-grid-headerCell-inner {
+    line-height: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.eci-grid-headerCell {
+    height: 22px;
+}
+
+.eci-grid-pager {
+    height: 23px;
+    line-height: 23px;
+}
+
+.eci-grid-row {
+    height: 20px;
+    line-height: 20px;
+}
+
+.eci-pager-right {
+    line-height: 22px;
+}
+
+.eci-pager-index {
+    height: 22px;
+}
+
+.eci-pager-num-container {
+    float: left;
+    height: 19px;
+    line-height: 19px;
+}
+
+    .eci-pager-num-container span {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+.eci-pager-num {
+    height: 17px;
+    width: 30px;
+    margin: 1px 4px 0px 4px;
+    padding: 0px;
+}
+
+.eci-pager-go {
+    height: 18px;
+    float: right;
+}
+
+.eci-grid-pager-select {
+    margin-left: 2px;
+    margin-top: 1px;
+    height: 20px;
+}
+
+/*针对紧凑模式 蓝色线条难看*/
+.eci-grid-row td, .eci-grid-cell, .eci-grid-headerCell, .eci-grid-filterCell, .eci-grid-summaryCell {
+    border-right: 1px solid #EFEFEF !important;
+    border-bottom: 1px solid #EFEFEF !important;
+}
+ 
+.eci-grid-headerCell {
+    border-top: 1px solid #A5ACB5 !important;
+    border-right: 1px solid #A5ACB5 !important;
+    border-bottom: 1px solid #A5ACB5 !important;
+}
+
+.eci-choose-icon
+{
+    height:14px !important;
+}
+

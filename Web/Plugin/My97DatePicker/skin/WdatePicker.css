@@ -1,0 +1,20 @@
+.Wdate {
+    border: #999 1px solid;
+    height: 16px;
+    background: #fff url(datePicker.gif) no-repeat right;
+    border-color: #A2BAC0 #B8D0D6 #B8D0D6 #A2BAC0;
+}
+
+.WdateFmtErr {
+    font-weight: bold;
+    color: red;
+}
+
+.Wdate {
+    height: 20px;
+    border-color: #A2BAC0 #B8D0D6 #B8D0D6 #A2BAC0;
+}
+
+/*.eci-notnull {
+    background-color: #FBFB84;
+}*/

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B26FB64B-EFC8-4048-941E-90B500C54FF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECI.MES.Entity</RootNamespace>
+    <AssemblyName>ECI.MES.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ECI.Speed.Core">
+      <HintPath>..\ShareLib\开发平台\ECI.Speed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\MES_BD_BC.cs" />
+    <Compile Include="Entity\MES_BD_BGWJLB.cs" />
+    <Compile Include="Entity\MES_BD_BZ.cs" />
+    <Compile Include="Entity\MES_BD_CC.cs" />
+    <Compile Include="Entity\MES_BD_CITY.cs" />
+    <Compile Include="Entity\MES_BD_CJ.cs" />
+    <Compile Include="Entity\MES_BD_CK.cs" />
+    <Compile Include="Entity\MES_BD_CPXS.cs" />
+    <Compile Include="Entity\MES_BD_CPXS_CC.cs" />
+    <Compile Include="Entity\MES_BD_CPXS_DOC.cs" />
+    <Compile Include="Entity\MES_BD_CPXS_MJ.cs" />
+    <Compile Include="Entity\MES_BD_CS.cs" />
+    <Compile Include="Entity\MES_BD_CW.cs" />
+    <Compile Include="Entity\MES_BD_DB.cs" />
+    <Compile Include="Entity\MES_BD_DB_ZDB.cs" />
+    <Compile Include="Entity\MES_BD_DEPT.cs" />
+    <Compile Include="Entity\MES_BD_FPCY.cs" />
+    <Compile Include="Entity\MES_BD_FPSZ.cs" />
+    <Compile Include="Entity\MES_BD_FPSZ_DOC.cs" />
+    <Compile Include="Entity\MES_BD_GDZC.cs" />
+    <Compile Include="Entity\MES_BD_GDZC_DEPT.cs" />
+    <Compile Include="Entity\MES_BD_GDZC_FSSB.cs" />
+    <Compile Include="Entity\MES_BD_GDZC_TQYJL.cs" />
+    <Compile Include="Entity\MES_BD_GDZC_ZJFFT.cs" />
+    <Compile Include="Entity\MES_BD_GX.cs" />
+    <Compile Include="Entity\MES_BD_GX_GZSZ.cs" />
+    <Compile Include="Entity\MES_BD_GYS.cs" />
+    <Compile Include="Entity\MES_BD_GYS_GYWL.cs" />
+    <Compile Include="Entity\MES_BD_GZ.cs" />
+    <Compile Include="Entity\MES_BD_JJLX.cs" />
+    <Compile Include="Entity\MES_BD_JYGD.cs" />
+    <Compile Include="Entity\MES_BD_JZ.cs" />
+    <Compile Include="Entity\MES_BD_KM.cs" />
+    <Compile Include="Entity\MES_BD_KQJ.cs" />
+    <Compile Include="Entity\MES_BD_MJ.cs" />
+    <Compile Include="Entity\MES_BD_MJLX.cs" />
+    <Compile Include="Entity\MES_BD_MJLXCS.cs" />
+    <Compile Include="Entity\MES_BD_MJ_CP.cs" />
+    <Compile Include="Entity\MES_BD_MJ_CS.cs" />
+    <Compile Include="Entity\MES_BD_MJ_DOC.cs" />
+    <Compile Include="Entity\MES_BD_MJ_DYYX.cs" />
+    <Compile Include="Entity\MES_BD_MJ_WXBF.cs" />
+    <Compile Include="Entity\MES_BD_PROVINCE.cs" />
+    <Compile Include="Entity\MES_BD_SB.cs" />
+    <Compile Include="Entity\MES_BD_SBDB.cs" />
+    <Compile Include="Entity\MES_BD_SBWXBY.cs" />
+    <Compile Include="Entity\MES_BD_SB_DOC.cs" />
+    <Compile Include="Entity\MES_BD_SCSJBCS.cs" />
+    <Compile Include="Entity\MES_BD_SCX.cs" />
+    <Compile Include="Entity\MES_BD_SCX_BC.cs" />
+    <Compile Include="Entity\MES_BD_SCX_BC_GZ_GZ.cs" />
+    <Compile Include="Entity\MES_BD_SCX_BC_TQYJL.cs" />
+    <Compile Include="Entity\MES_BD_SCX_CPPL.cs" />
+    <Compile Include="Entity\MES_BD_SCX_FP.cs" />
+    <Compile Include="Entity\MES_BD_SCX_MJ.cs" />
+    <Compile Include="Entity\MES_BD_SJKBG.cs" />
+    <Compile Include="Entity\MES_BD_UNIT.cs" />
+    <Compile Include="Entity\MES_BD_WHCD.cs" />
+    <Compile Include="Entity\MES_BD_WJLB.cs" />
+    <Compile Include="Entity\MES_BD_WL.cs" />
+    <Compile Include="Entity\MES_BD_WLPL.cs" />
+    <Compile Include="Entity\MES_BD_WLPL_CPXS.cs" />
+    <Compile Include="Entity\MES_BD_WLPL_TJ.cs" />
+    <Compile Include="Entity\MES_BD_WLQZPL.cs" />
+    <Compile Include="Entity\MES_BD_WLSX.cs" />
+    <Compile Include="Entity\MES_BD_WLZPL.cs" />
+    <Compile Include="Entity\MES_BD_WL_DOC.cs" />
+    <Compile Include="Entity\MES_BD_WL_FZ_UNIT.cs" />
+    <Compile Include="Entity\MES_BD_WL_GYS.cs" />
+    <Compile Include="Entity\MES_BD_ZJFF.cs" />
+    <Compile Include="Entity\MES_BD_ZQ.cs" />
+    <Compile Include="Entity\MES_BD_ZW.cs" />
+    <Compile Include="Entity\MES_BD_ZY.cs" />
+    <Compile Include="Entity\MES_BD_ZY_DOC.cs" />
+    <Compile Include="Entity\MES_BD_ZY_STATUS.cs" />
+    <Compile Include="Operation\BusinessOperation.cs" />
+    <Compile Include="Operation\OperManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\BaseDataEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Param\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

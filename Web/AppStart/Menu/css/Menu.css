@@ -1,0 +1,64 @@
+﻿html, body, form {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.m_g_item span {
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.m_g_item:hover {
+    background-color: #FDC500;
+}
+
+.icon-function {
+    background: url('../../../Icon/plugin.png') no-repeat;
+    background-position: center;
+}
+
+.current {
+    background: pink;
+}
+
+.panel-body {
+    color: #000000;
+    font-size: 12px;
+    overflow-y: auto;
+    overflow-y: auto;
+    background-color: transparent;
+    background-color: #ffffff;
+}
+
+.background {
+    background-image: url(images/menu_bg.jpg);
+    background-position-y: 1px;
+}
+
+#menu {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+ 
+::-webkit-scrollbar-track-piece {
+    background-color: #fff !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(221, 221, 221);
+    }
+ 
+    ::-webkit-scrollbar-thumb:active {
+        -webkit-border-radius:5px;
+        background-color: gainsboro;
+    }

@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="yes"?>
+<Tip>
+  <Data>
+    <CODE>ECI_DATA_HELP.ASSEMBLY_NAME</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>扩展定义1</NAME>
+    <NOTE>&lt;h3&gt;维护格式:&lt;/h3&gt;&lt;p&gt;&lt;span class="notnull"&gt;程序集+封号+完整类名&lt;/span&gt;
+ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/p&gt;&lt;p&gt;例如：&amp;nbsp;&lt;span class="notnull"&gt;ECI.Speed.SO;ECI.Speed.Extend.DataHelpExtend&lt;/span&gt;&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.AUTO_UPPER</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>区分大小写</NAME>
+    <NOTE>&lt;p&gt;在SQLSERVER&lt;a href="http://www.baidu.com" target="_blank"&gt;中默认是不区分&lt;/a&gt;大小写的，Oracle数据是区分大小写的&lt;br/&gt;可以通过选中此选项设定查询时不区分大小写&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.MEMO</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>备注</NAME>
+    <NOTE>&lt;p&gt;&lt;span style="background-color: rgb(255, 0, 0);"&gt;补充&lt;/span&gt;描述&lt;/p&gt;&lt;p&gt;大幅度发&lt;/p&gt;&lt;p&gt;订单&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.CHOOSE_SHOW</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>显示配置</NAME>
+    <NOTE>&lt;p&gt;{ 字段:中文说明,字段:中文说明 }&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;br/&gt;*注意* 代码列和名称列一定会显示，不需要设置&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.CONFIG</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>配置</NAME>
+    <NOTE>&lt;p&gt;配置格式&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp; { Head:{lang:&amp;#39;XXXXX&amp;#39;},KEY_VALUE:{lang:&amp;#39;XXXXX&amp;#39;},KEY_NAME:{lang:&amp;#39;YYYYY&amp;#39;}}
+ &amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;注意:Head是固定写法，表示表头&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp; 其中 code,name 是代表字段&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;宽度设置&lt;span style="color: rgb(255, 0, 0);"&gt;优于&lt;/span&gt;布局设&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;strong&gt;置&lt;/strong&gt;&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.CONVERT_SQL</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>转换SQL</NAME>
+    <NOTE>&lt;p&gt;一般情况用不到，主要用于程序设计页面用来代码转中文&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.FILTER</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>过滤数据</NAME>
+    <NOTE>&lt;p&gt;指示弹出放大镜页面的时候，是否根据文本框已经输入的内容筛选数据&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.QUERY_TYPE</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>查询类型</NAME>
+    <NOTE>&lt;p&gt;用在EChoose控件或者下拉框控件的ECIType属性值&lt;/p&gt;&lt;p&gt;标识资源的唯一代码,要有意义&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+  <Data>
+    <CODE>ECI_DATA_HELP.SQL</CODE>
+    <SYSTEMCODE>KFPT</SYSTEMCODE>
+    <NAME>查询语句</NAME>
+    <NOTE>&lt;p&gt;注意SQL查询结果中不能含有FLAG&lt;/p&gt;</NOTE>
+    <STATUS>Y</STATUS>
+    <TYPE>ToolTip</TYPE>
+  </Data>
+</Tip>

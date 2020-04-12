@@ -1,0 +1,35 @@
+﻿.logotxt {line-height:30px; font-size: 16px;}
+.topleft, topright,div-top { height:30px;}
+.img-logo {width:20px;height:20px;margin-top:5px}
+.img-title {height:71px;}
+.nav li{width:80px;height:30px;}
+.nav li a{width:80px;height:30px;}
+.current-img{width:20px;height:20px;}
+
+.nav li a.selected{}
+.nav li a:hover{display:block;background:#000;color:#fff;background:  scroll 0% 0% rgb(43, 127, 181);}
+
+.topright ul{padding-top:5px;}
+
+.user-box {margin-top:0px;display:inline-block;}
+ 
+.user{height:22px;margin-top:0px;line-height:22px;float:left;}
+.user span{font-size:13px;background:url(images/user.png) no-repeat 10px 4px;margin-top:0px;}
+.user b{width:20px;height:18px; line-height:18px; font-size:13px; margin-top:1px;}
+.user i{font-size:13px;height:18px; line-height:18px;margin-top:2px;}
+
+ 
+.userContainer {margin-top:0px; padding-top:0px;display:none1;}
+
+  #currentAppName{ padding-right: 10px;
+                   line-height: 20px;
+                   height:20px;
+                   margin:0px;
+                   margin-top:0px;
+                  padding-left:20px;
+                  font-size:13px;
+                            }
+
+
+
+ 

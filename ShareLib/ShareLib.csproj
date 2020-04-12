@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11F4AD47-2A9A-48A2-B86F-51F8EAB61D5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShareLib</RootNamespace>
+    <AssemblyName>ShareLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="开发平台\ECI.Customer.Service.dll" />
+    <Content Include="开发平台\ECI.Export.Core.dll" />
+    <Content Include="开发平台\ECI.SOA.Client.dll" />
+    <Content Include="开发平台\ECI.SOA.Service.dll" />
+    <Content Include="开发平台\ECI.Speed.BLL.dll" />
+    <Content Include="开发平台\ECI.Speed.BLL.pdb" />
+    <Content Include="开发平台\ECI.Speed.Chart.dll" />
+    <Content Include="开发平台\ECI.Speed.Core.dll" />
+    <Content Include="开发平台\ECI.Speed.Core.pdb" />
+    <Content Include="开发平台\ECI.Speed.Core.xml" />
+    <Content Include="开发平台\ECI.Speed.Mobile.dll" />
+    <Content Include="开发平台\ECI.Speed.SO.dll" />
+    <Content Include="开发平台\ECI.Speed.SO.pdb" />
+    <Content Include="开发平台\ECI.Speed.Web.dll" />
+    <Content Include="开发平台\ECI.Speed.Web.pdb" />
+    <Content Include="开发平台\ECI.Speed.Web.xml" />
+    <Content Include="开发平台\ECI.SSO.BizEntity.dll" />
+    <Content Include="开发平台\ECI.SSO.Common.dll" />
+    <Content Include="开发平台\ECI.SSO.Framework.dll" />
+    <Content Include="开发平台\ECI.SSO.OrganizationManagement.dll" />
+    <Content Include="开发平台\ECI.SSO.SecurityManagement.dll" />
+    <Content Include="开发平台\ECI.SSO.StructureManagement.dll" />
+    <Content Include="开发平台\ECI.SSO.SystemManagement.dll" />
+    <Content Include="开发平台\ECI.UEditor.dll" />
+    <Content Include="开发平台\ECI.SSO.Client.dll" />
+    <Content Include="开发平台\ECI.Ulit.Crypto.dll" />
+    <Content Include="开发平台\ECI.Ulit.Notice.dll" />
+    <Content Include="开发平台\ECI.Web.dll" />
+    <Content Include="权限平台\ECI.SSO.BizEntity.dll" />
+    <Content Include="权限平台\ECI.SSO.BLL.dll" />
+    <Content Include="权限平台\ECI.SSO.Common.dll" />
+    <Content Include="权限平台\ECI.SSO.DAL.dll" />
+    <Content Include="权限平台\ECI.SSO.Entity.dll" />
+    <Content Include="权限平台\ECI.SSO.Framework.dll" />
+    <Content Include="权限平台\ECI.SSO.Library.dll" />
+    <Content Include="权限平台\ECI.SSO.ServiceList.dll" />
+    <Content Include="权限平台\ECI.SSO.SO.dll" />
+    <Content Include="权限平台\ECI.SSO.UI.dll" />
+    <Content Include="权限平台\ECI.SSO.Web.dll" />
+    <Content Include="第三方\DocX.dll" />
+    <Content Include="第三方\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="第三方\log4net.dll" />
+    <Content Include="第三方\MessagingToolkit.QRCode.dll" />
+    <Content Include="第三方\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="第三方\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="第三方\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="第三方\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="第三方\MySql.Data.dll" />
+    <Content Include="第三方\Newtonsoft.Json.dll" />
+    <Content Include="第三方\NPOI.dll" />
+    <Content Include="第三方\NPOI.OOXML.dll" />
+    <Content Include="第三方\NPOI.OpenXml4Net.dll" />
+    <Content Include="第三方\NPOI.OpenXmlFormats.dll" />
+    <Content Include="第三方\oracle.dataaccess.dll" />
+    <Content Include="第三方\Oracle.ManagedDataAccess.dll" />
+    <Content Include="第三方\ServiceStack.Client.dll" />
+    <Content Include="第三方\ServiceStack.Common.dll" />
+    <Content Include="第三方\ServiceStack.dll" />
+    <Content Include="第三方\ServiceStack.Interfaces.dll" />
+    <Content Include="第三方\ServiceStack.Redis.dll" />
+    <Content Include="第三方\ServiceStack.Text.dll" />
+    <Content Include="第三方\SharpCompress.dll" />
+    <Content Include="第三方\SharpZipLib.dll" />
+    <Content Include="第三方\Wilco.SyntaxHighlighter.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

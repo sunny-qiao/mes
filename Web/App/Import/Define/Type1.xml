@@ -1,0 +1,10 @@
+﻿<ImportConfig  TypeName="基础料号" TableName="DEMO_001" Action="ReadData,Event"  ProcedureName="PR_DEMO_001_IMPORT" CheckMode="All" NeedPageCount="0" OnClose="window.parent.search()" TemplateFile="Excel/基础料号.xls"  >
+  <Procedure>
+    <Param Name="IMPORT_ID" Value="$IMPORT_ID$"></Param>
+    <Param1 Name="BIZ_NO" Value="{BizNo}"></Param1>
+    <Param Name="COMP" Value="#COMPANY_CODE#"></Param>
+  </Procedure>
+
+  <Column Name="料号" DataField="PART_NO" NotNull="True" Width="200"></Column>
+  <Column Name="商品名称" DataField="NAME" NotNull="True"  IsNumber="True" Width="200"></Column>
+</ImportConfig>

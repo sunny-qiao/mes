@@ -1,0 +1,11 @@
+﻿.text-disabled, .select-disabled {
+    border: 0px;
+    border-bottom: 1px solid #DDDDDD !important;
+    background-color: transparent !important;
+    border-radius: 0px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+}
+
+.eci-choose-box {
+    border: 0px;
+}
