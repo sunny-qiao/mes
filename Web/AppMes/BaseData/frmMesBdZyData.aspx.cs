@@ -96,6 +96,7 @@ public partial class AppMes_BaseData_frmMesBdZyData : BasePage
         item.NAME = PageHelper.Request(MES_BD_ZY.Fields.NAME);
         item.CODE = PageHelper.Request(MES_BD_ZY.Fields.CODE);
         item.STATUS = PageHelper.Request(MES_BD_ZY.Fields.STATUS);
+        item.TEL = PageHelper.Request(MES_BD_ZY.Fields.TEL);
 
         EciRequest request = new EciRequest(MESService.MesBdZySave);
         request.Entity = item;
