@@ -62,12 +62,12 @@
                     Width="1000px" KeyField="GUID" HAlign="center" OnClick="editAction">
                     <Columns>
 
-                        <asp:TemplateField HeaderText="操作" ItemStyle-HorizontalAlign="Center" ItemStyle-Width="150">
+                       <%-- <asp:TemplateField HeaderText="操作" ItemStyle-HorizontalAlign="Center" ItemStyle-Width="150">
                             <ItemTemplate>
                                 <asp:EButton runat="server" ID="btnEdit" Text="编辑" IsClient="true" Icon="edit" OnClientClick="editAction(this);" />
                                 <asp:EButton runat="server" Icon="Delete" ID="btnDelete" Text="删除" IsClient="true" OnClientClick="return deleteAction(this);" CommandArgument='<%#Eval("GUID")%>' OnClick="btnDelete_Click" />
                             </ItemTemplate>
-                        </asp:TemplateField>
+                        </asp:TemplateField>--%>
                         <%--<asp:BoundField DataField="NAME" HeaderText="职员" SortExpression="NAME" ItemStyle-Width="150"></asp:BoundField>--%>
                         <asp:BoundField DataField="RZ_DATE" HeaderText="入职日期" SortExpression="RZ_DATE" DataFormatString="{0:yyyy-MM-dd}" ItemStyle-Width="80"></asp:BoundField>
                         <asp:BoundField DataField="LZ_DATE" HeaderText="离职/转岗日期" SortExpression="LZ_DATE" DataFormatString="{0:yyyy-MM-dd}" ItemStyle-Width="80"></asp:BoundField>
@@ -78,7 +78,11 @@
                         <asp:BoundField DataField="SSBZ" HeaderText="所属班组" SortExpression="SSBZ" ItemStyle-Width="150"></asp:BoundField>
                         <asp:BoundField DataField="GZJJGZBL" HeaderText="工种计件工资比例" SortExpression="GZJJGZBL" ItemStyle-Width="150"></asp:BoundField>
                         <asp:BoundField DataField="REMARK" HeaderText="备注" SortExpression="REMARK" ItemStyle-Width="150"></asp:BoundField>
-
+                        <asp:TemplateField HeaderText="删除" ItemStyle-HorizontalAlign="Center" ItemStyle-Width="80">
+                            <ItemTemplate>
+                                <asp:EButton runat="server" Icon="Delete" ID="btnDelete" Text="删除" IsClient="true" OnClientClick="return deleteAction(this);" CommandArgument='<%#Eval("GUID")%>' OnClick="btnDelete_Click" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     </Columns>
                 </asp:EGridView>
             </div>

@@ -489,7 +489,9 @@
                 }
             })
         }
-
+        function Download() {
+            window.open("../ExcelTemplate/职员.xls", "data", "data");
+        }
     </script>
 </head>
 <body>
@@ -511,7 +513,8 @@
 
                                 <asp:EButton runat="server" Text="新增" ID="btnAdd" Icon="add" IsClient="true" OnClientClick="append()" />
                                 <asp:EButton runat="server" Text="保存" ID="btnSave" Icon="save" IsClient="true" OnClientClick="save()" />
-                                <asp:EButton runat="server" Text="删除" ID="btnDeleteIt" Icon="delete" IsClient="true" OnClientClick="deleteIt()" />
+                                <%--<asp:EButton runat="server" Text="删除" ID="btnDeleteIt" Icon="delete" IsClient="true" OnClientClick="deleteIt()" />--%>
+                                <asp:EButton runat="server" Text="下载模板" ID="btnDown" Icon="excel" IsClient="true" OnClientClick="downExcel()" />
                                 <asp:EButton runat="server" Text="导入" ID="btnImp" Icon="excel" IsClient="true" OnClientClick="import()" />
                             </div>
                         </td>
