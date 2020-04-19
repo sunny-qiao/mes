@@ -174,14 +174,6 @@
         </td>
 
     </tr>
-    <tr>
-        <td colspan="6">
-            <asp:ETab runat="server" ID="tabZy" ActiveTabIndex="0">
-                <asp:ETabItem runat="server" ID="tabStatus" Title="职员工种及状态" Frame="true"></asp:ETabItem>
-                <asp:ETabItem runat="server" ID="tabDoc" Title="文件录入" Frame="true"></asp:ETabItem>
-            </asp:ETab>
-        </td>
-    </tr>
 </table>
 
 
@@ -190,4 +182,6 @@
     <asp:ETextBox runat="server" ID="txtPARENTID" Width="85%" ReadOnly="true"></asp:ETextBox>
     <asp:ETextBox runat="server" ID="txtFLAG" Width="85%" ReadOnly="true"></asp:ETextBox>
     <asp:ETextBox runat="server" ID="txtGUID" Width="85%" ReadOnly="true"></asp:ETextBox>
+    <asp:ETextBox runat="server" ID="txtPic1Path" Width="85%"></asp:ETextBox>
+    <asp:ETextBox runat="server" ID="txtPic1" Width="85%"></asp:ETextBox>
 </div>

@@ -128,6 +128,8 @@ public partial class AppMes_BaseData_frmMesBdZyData : BasePage
         item.JS4_ADDRESS = PageHelper.Request(MES_BD_ZY.Fields.JS4_ADDRESS);
         item.CAR_NO = PageHelper.Request(MES_BD_ZY.Fields.CAR_NO);
         item.CAR_TYPE = PageHelper.Request(MES_BD_ZY.Fields.CAR_TYPE);
+        item.PIC1 = PageHelper.Request(MES_BD_ZY.Fields.PIC1);
+        item.PIC1_PATH = PageHelper.Request(MES_BD_ZY.Fields.PIC1_PATH);
 
         EciRequest request = new EciRequest(MESService.MesBdZySave);
         request.Entity = item;

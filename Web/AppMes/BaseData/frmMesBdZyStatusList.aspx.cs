@@ -13,13 +13,23 @@ using ECI.MES.UI;
 
 public partial class AppMes_BaseData_frmMesBdZyStatusList : QueryPage
 {
+    private string fguid
+    {
+        get { return this.hidFguid.Value; }
+        set { this.hidFguid.Value = value; }
+    }
     protected void Page_Load(object sender, EventArgs e)
     {
 
          if (!IsPostBack)
          {
+            this.fguid = PageHelper.Request("fguid");
 
-         }
+            if (this.fguid.HasValue())
+            {
+                this.Search();
+            }
+        }
 
     }
 

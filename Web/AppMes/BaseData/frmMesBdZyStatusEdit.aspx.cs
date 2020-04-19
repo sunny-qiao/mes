@@ -19,25 +19,42 @@ public partial class AppMes_BaseData_frmMesBdZyStatusEdit : BasePage
         get { return this.hidKey.Value; }
         set { this.hidKey.Value = value; }
     }
-
+    private string fguid
+    {
+        get { return this.hidFguid.Value; }
+        set { this.hidFguid.Value = value; }
+    }
     protected void Page_Load(object sender, EventArgs e)
     {
 
-            if (!IsPostBack)
+        if (!IsPostBack)
+        {
+            this.key = PageHelper.Request("key");
+            this.fguid = PageHelper.Request("fguid");
+            if (this.key.HasValue())
             {
-                this.key = PageHelper.Request("key");
-
-                if (this.key.HasValue())
-                {
-                    LoadRecord();
-                }
-			   //else
-      //         {
-      //            this.btnAdd.Enabled = false;
-      //         }
+                LoadRecord();
             }
+            else
+            {
+                LoadHeadRecord();
+            }
+        }
     }
+    private void LoadHeadRecord()
+    {
+        EciRequest request = new EciRequest(MESService.MesBdZyLoad);
+        request.Key = this.fguid;
 
+        EciResponse response = SOA.Execute(request);
+
+        MES_BD_ZY data = response.DataTable.ToEntity<MES_BD_ZY>();
+
+        if (!data.IsNull())
+        {
+            txtName.Text = data.NAME;
+        }
+    }
     private void LoadRecord()
     {
         EciRequest request = new EciRequest(MESService.MesBdZyStatusLoad);
@@ -66,6 +83,10 @@ public partial class AppMes_BaseData_frmMesBdZyStatusEdit : BasePage
         saveEntity.Data = this.GetEntityFromUI().Data;
 
         saveEntity.GUID = this.key;
+        if (request.IsAdd)
+        {
+            saveEntity.FGUID = this.fguid;
+        }
 
         EciResponse response = SOA.Execute(request);
 
@@ -74,7 +95,7 @@ public partial class AppMes_BaseData_frmMesBdZyStatusEdit : BasePage
         if (request.IsAdd)
         {
             this.key = data.GUID;
- 
+
             //this.btnAdd.Enabled = true;
 
             //this.txtCreateDate.Text = DateTime.Now.ToFullString();

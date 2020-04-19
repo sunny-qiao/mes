@@ -115,9 +115,12 @@
                     var id = node.id;
                     editNode = node;
                     load(id);
-
+                    $("#tabStatus").attr("src", "frmMesBdZyStatusList.aspx?fguid=" + id);
                 },
-
+                onLoadSuccess: function (node, data) {
+                    expandAll();
+                }
+                ,
                 onContextMenu: function (e, node) {
                     e.preventDefault();
                     $('#tt').tree('select', node.target);
@@ -247,6 +250,8 @@
             $("#ascxEdit_txtJs4Address").val("");
             $("#ascxEdit_txtCarNo").val("");
             $("#ascxEdit_txtCarType").val("");
+            $("#ascxEdit_txtPic1Path").val("");
+            $("#ascxEdit_txtPic1").val("");
 
             $("#ascxEdit_txtGh").focus();
 
@@ -415,6 +420,8 @@
             data.JS4_ADDRESS = $("#ascxEdit_txtJs4Address").val();
             data.Car_No = $("#ascxEdit_txtCarNo").val();
             data.Car_Type = $("#ascxEdit_txtCarType").val();
+            data.pic1_path = $("#ascxEdit_txtPic1Path").val();
+            data.pic1 = $("#ascxEdit_txtPic1").val();
 
             data.PARENTID = $("#ascxEdit_txtPARENTID").val();
             data.FLAG = $("#ascxEdit_txtFLAG").val();
@@ -511,8 +518,8 @@
                     </tr>
 
                     <tr style="height: 100%">
-                        <td style="width: 300px; vertical-align: top;">
-                            <div class="easyui-panel fitH" layout="48" style="padding: 5px; border-top: 0px;">
+                        <td style="width: 200px; vertical-align: top;">
+                            <div class="easyui-panel fitH" style="padding: 5px; border-top: 0px;">
                                 <ul id="tt"></ul>
                             </div>
                         </td>
@@ -521,6 +528,13 @@
                                 <div class="pagetitle">职员</div>
                                 <uc1:ascxEdit runat="server" ID="ascxEdit" />
                                 <div style="margin: 2px;"></div>
+                            </div>
+                            <div style="border-right: 1px solid #95B8E7;" class="fitH" layout="148">
+                                <iframe runat="server" id="tabStatus" width="100%" height="100%"></iframe>
+                                <%--<asp:ETab runat="server" ID="tabZy" ActiveTabIndex="0">
+                                    <asp:ETabItem runat="server" ID="tabStatus" Title="职员工种及状态" Frame="true"></asp:ETabItem>
+                                    <asp:ETabItem runat="server" ID="tabDoc" Title="文件录入" Frame="true"></asp:ETabItem>
+                                </asp:ETab>--%>
                             </div>
                         </td>
                     </tr>

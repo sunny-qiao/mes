@@ -12,8 +12,9 @@ public partial class AppMes_BaseData_ascxEditZy : System.Web.UI.UserControl
         if (!IsPostBack)
         {
             cboStatus.InitItems();
-            tabStatus.Url = "frmMesBdZyStatusEdit.aspx?key=" + txtGUID.Text + "&code=" + this.txtCode.Text.Trim();
-            tabDoc.Url = "frmMesBdZyDocEdit.aspx?key=" + txtGUID.Text + "&code=" + this.txtCode.Text.Trim();
+            
         }
+
     }
+ 
 }
